@@ -191,6 +191,7 @@ bool MapSaver::saveMapTopicToFile(
       map_qos.transient_local();
       map_qos.reliable();
       map_qos.keep_last(1);
+      map_qos.durability_voltatile();
     }
 
     // Create new CallbackGroup for map_sub
